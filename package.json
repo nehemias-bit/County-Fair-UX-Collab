@@ -1,0 +1,19 @@
+{
+  "name": "county-fair-ux-collab",
+  "version": "1.0.0",
+  "description": "## Nehemias Cruz",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nehemias-bit/County-Fair-UX-Collab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nehemias-bit/County-Fair-UX-Collab/issues"
+  },
+  "homepage": "https://github.com/nehemias-bit/County-Fair-UX-Collab#readme"
+}
