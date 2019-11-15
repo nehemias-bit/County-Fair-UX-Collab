@@ -1,20 +1,26 @@
-import React from "react";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-// define our Event component
-class App extends React.Component {
-  constructor() {
-    super();
-  }
-
-  render() {
-    // make sure to return some UI
-    return (
-      <div>
-        <h2>Basketball Practice</h2>
-        <p>7:45 - 9 pm</p>
-      </div >
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
