@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Main from './components/Main';
+import CountDownClock from './components/CountDownClock';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      deadline: "2019-12-25T20:00:00-04:00"
+    }
+  }
+      
+    render() {
+      return (
+        <div className="app">
+          <Main />
+          <CountDownClock deadline={this.state.deadline}/>
+      </div>
+    );
+  }
 }
 
 export default App;
