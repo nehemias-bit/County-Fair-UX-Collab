@@ -16,8 +16,16 @@
   color: white;
 }
 
+#email-footer {
+  background-color: green;
+  color: black
+}
+
 #social-links img {
   height: 20px;
+}
+#link-footer {
+  /* vertical-align: middle; */
 }
 
 #main-section {
