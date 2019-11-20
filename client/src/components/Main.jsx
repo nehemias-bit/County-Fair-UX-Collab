@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CountDownClock from './CountDownClock';
 import { Route, Link, withRouter } from 'react-router-dom';
 import Gallery from './Gallery';
+import FairCarousel from './FairCarousel';
 
 export default class Main extends Component {
   render() {
@@ -11,14 +12,14 @@ export default class Main extends Component {
         <nav id="main-section-nav">
             <button>The Fair</button>
             <Link to={`/gallery`}>
-            <button>Gallery</button>
+            <button id="gallery-button">Gallery</button>
             </Link> 
-            
           <button>Visit</button>
           <button>About</button>
           <input type="text" placeholder="SEARCH"></input>
           <button id="magnify-glass"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/490px-Magnifying_glass_icon.svg.png" alt="magnifyglass logo"/></button>
         </nav>
+        <FairCarousel />
         </div>
         <div id="bottom-nav">
           <div id="date-and-count">
