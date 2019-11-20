@@ -41,7 +41,7 @@ export default function Footer(props) {
       </div>
       <div id="social-media-footer">
         <div>
-          <p>Social</p>
+          <h3>Social</h3>
         </div>
         <div id="social-links">
           <img

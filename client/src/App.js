@@ -3,6 +3,9 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
+import Gallery from './components/Gallery'
+import { Route, Link, withRouter } from 'react-router-dom';
+
 
 // define our Event component
 class App extends React.Component {
@@ -18,8 +21,12 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <Main deadline={this.state.deadline}/>
+        <Main deadline={this.state.deadline} />
+        <Route exact path='/gallery' render={() => (
+          <Gallery />
+        )} />
         <Footer />
+        
       </div >
 
     )

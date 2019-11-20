@@ -17,16 +17,15 @@
 }
 
 #email-footer {
-  background-color: green;
-  color: black
+  background-color: rgb(194, 214, 194);
+  color: black;
 }
 
 #social-links img {
-  height: 20px;
+  height: 25px;
+  margin: 5px;
 }
-#link-footer {
-  /* vertical-align: middle; */
-}
+
 
 #main-section {
   height: 500px;
@@ -160,4 +159,32 @@
 #buy-ticket button:hover {
   background-color: black;
   color: white;
+}
+
+
+#top-gallery-images {
+  display: flex;
+  justify-content: center;
+}
+#top-gallery-images img {
+  width: 20vw;
+  height: 20vw;
+  margin: 1px;
+}
+
+#middle-gallery-images img {
+  width: 60vw;
+  height: 30vw;
+  margin: 10px;
+  margin-left: 19.5%
+}
+#bottom-gallery-images {
+  display: flex;
+  justify-content: center;
+}
+
+#bottom-gallery-images img {
+  width: 30vw;
+  height: 20vw;
+  margin: 1px;
 }
