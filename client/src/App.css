@@ -22,14 +22,12 @@
 
 #main-section {
   height: 500px;
-  background-color: cadetblue;
 }
 
 #main-section-nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   height: 70px;
-  background-color: lightgray;
 }
 
 #magnify-glass {
@@ -39,9 +37,14 @@
 
 #main-section-nav button {
   width: 100%;
-  background-color: lightgray;
+  background-color: #a62424;
   font-size: 40px;
-  border-right: 1px solid black;
+  border-right: 1px solid white;
+  color: white;
+}
+
+#gallery-button {
+  height: 70px
 }
 
 #main-section-nav button:focus {
@@ -57,14 +60,44 @@
 }
 
 #main-section-nav input {
-  background-color: lightgray;
+  background-color: #a62424;
   border: none;
   font-size: 30px;
   padding-left: 10px;
+  color: white;
 }
 
 #main-section-nav input:focus {
   outline: 0;
+}
+
+.fair-carousel {
+  background-color: white;
+  height: 430px;
+  overflow: hidden;
+}
+
+.fair-carousel img {
+  width: 1419px;
+  height: 54.5vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-dots {
+  margin-top: -40px !important;
+  z-index: 99 !important;
+  position: relative;
+}
+
+.carousel-dots li {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.carousel-dots li.carousel-dots-active button:before {
+  opacity: 1 !important;
+  color: white !important;
 }
 
 #date-nav {
