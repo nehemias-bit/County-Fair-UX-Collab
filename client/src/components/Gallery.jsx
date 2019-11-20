@@ -1,7 +1,5 @@
 import React from "react";
 // import './App.css';
-import Header from './Header';
-import Footer from './Footer';
 import { Route, Link, withRouter } from 'react-router-dom';
 
 // define our Event component
