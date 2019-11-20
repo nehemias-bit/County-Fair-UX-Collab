@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import CountDownClock from './CountDownClock';
+import { Route, Link, withRouter } from 'react-router-dom';
+import Gallery from './Gallery';
 import FairCarousel from './FairCarousel';
-import { Link } from 'react-router-dom';
 
 export default class Main extends Component {
   render() {
@@ -9,8 +10,10 @@ export default class Main extends Component {
       <>
        <div id="main-section">
         <nav id="main-section-nav">
-          <button>The Fair</button>
-          <Link to="/gallery"><button id="gallery-button">Gallery</button></Link>
+            <button>The Fair</button>
+            <Link to={`/gallery`}>
+            <button id="gallery-button">Gallery</button>
+            </Link> 
           <button>Visit</button>
           <button>About</button>
           <input type="text" placeholder="SEARCH"></input>
