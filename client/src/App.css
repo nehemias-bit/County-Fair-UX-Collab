@@ -9,6 +9,11 @@
   height: 20vh;
 }
 
+#footer-image {
+  width: 20vw;
+  height: 20vh;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -45,9 +50,16 @@
 #main-section-nav button {
   width: 100%;
   background-color: #a62424;
-  font-size: 40px;
   border-right: 1px solid white;
   color: white;
+  font-family: Avenir;
+  font-size: 36px;
+  font-weight: 600;
+  /* font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center; */
 }
 
 #gallery-button {
@@ -71,6 +83,10 @@
   border: none;
   font-size: 30px;
   padding-left: 10px;
+  margin-top: 1px;
+}
+
+::placeholder {
   color: white;
 }
 
@@ -78,17 +94,15 @@
   outline: 0;
 }
 
-.fair-carousel {
-  background-color: white;
-  height: 430px;
-  overflow: hidden;
+.carousel-row {
+  height: 430px; 
 }
 
-.fair-carousel img {
-  width: 1419px;
-  height: 54.5vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+.carousel-row img {
+ width: 1419px;
+ height: 54.5vh;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 .carousel-dots {
@@ -109,21 +123,27 @@
 
 #date-nav {
   height: 90px;
-  background-color: lightgray;
+  background-color: #a62424;
   line-height: 99px;
-  border-right: 2px solid black;
+  border-right: 2px solid white;
   margin-top: 14px;
   margin-bottom: 14px;
+  font-family: Avenir;
+  font-size: 24px;
+  font-weight: 600;
+
 }
 
 #date-nav h2 {
   margin: 0 10px 0 10px;
+  color: white;
 }
 
 #count-down {
   display: flex;
-  width: 308px;
+  width: 320px;
   justify-content: space-evenly;
+  background-color: #a62424
 }
 
 #count-down p {
@@ -133,38 +153,51 @@
 
 #count-down h2 {
   margin-left: 10px;
+  font-family: Avenir;
 }
 
 #date-and-count {
   display: inline-flex;
-  background-color: lightgray;
+  background-color: #a62424;
 }
 
 #days {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;;
+  color: white;
 }
 
-#days h3 {
-  margin: 0;
+#days h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  margin-top: 19px;
 }
 
 #hours {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
-#hours h3 {
-  margin: 0;
+#hours h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  margin-top: 19px;
 }
 
 #minutes {
   display: flex;
   flex-direction: column;
+  color: white;
 }
 
-#minutes h3 {
-  margin: 0;
+#minutes h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 7px;
+  margin-top: 19px;
 }
 
 #bottom-nav {
@@ -172,21 +205,25 @@
 }
 
 #buy-ticket {
-  width: 61%;
+  width: 49%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: lightgray;
+  background-color: #a62424;
 }
 
 #buy-ticket button {
-  width: 130px;
-  height: 55px;
+  width: 173px;
+  height: 65px;
   margin-right: 100px;
-  font-size: 20px;
+  font-size: 24px;
   padding: 5px;
-  border: 2px solid black;
-  background-color: lightgray;
+  border: solid 1px #979797;
+  background-color: #5a7336;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 3px;
+  font-family: Mark;
 }
 
 #buy-ticket button:hover {
@@ -220,4 +257,250 @@
   width: 30vw;
   height: 20vw;
   margin: 1px;
+}
+
+#burger-menu {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+#header-search {
+  display: none;
+}
+
+@media only screen and (max-width: 320px) {
+
+  .header {
+    display: grid;
+    grid-template-columns: 70px 133px 149px;
+    width: 415px;
+  }
+
+  #header-search {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 14px;
+  }
+
+  #header-search img {
+    width: 20%;
+  }
+
+  #header-search input {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-top: 1px;
+    width: 29%;
+  }
+
+  ::placeholder {
+    color: black;
+    font-family: Avenir;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  #header-image {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width: 156%;
+    margin-right: 10px;
+  }
+
+  .burger {
+    height: 5px;
+    background-color: #5a7336;
+    width: 35px;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  #burger-menu {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+
+  #burger-menu p {
+    display: inline;
+    margin: 0;
+    font-family: Avenir;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  #right-side-header p {
+    display: none;
+  }
+
+  #main-section-nav {
+    display: none;
+  }
+
+  #date-and-count {
+    height: 50px;
+  }
+
+  #date-nav {
+    width: 167px;
+    height: 44px;
+    margin: 0px;
+    line-height: 50px;
+    margin-top: 3px;
+  }
+
+  #date-nav h2 {
+    font-size: 14px;
+    font-weight: 500;
+    display: inline;
+  }
+
+  #count-down {
+    display: grid;
+    grid-template-columns: 50px 50px 85px;
+    width: 247px;
+  }
+
+  #days {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #days p {
+    margin-top: 21px;
+  }
+
+  #hours {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #hours p {
+    margin-top: 21px;
+  }
+
+  #minutes {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #minutes p {
+    margin-top: 21px;
+  }
+
+  #count-down h2 {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  #count-down p {
+    font-size: 10px;
+    font-weight: 300;
+  }
+
+  #buy-ticket {
+    display: none;
+  }
+
+  #flip {
+    display: grid;
+    grid-template-areas: 
+    "a"
+    "b";
+  }
+
+  #main-section {
+    grid-area: b;
+  }
+
+  #bottom-nav {
+    grid-area: a;
+  }
+
+  .carousel-row {
+    height: 430px; 
+  }
+  
+  .carousel-row img {
+    width: 100%;
+    height: 74.5vh;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-areas:
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+        "h";
+    height: 749px;
+    width: 130%;
+  }
+
+  #sec-one-h3 {
+    margin: 0px;
+  }
+
+  
+  #footer-img-section {
+    grid-area: c;
+    width: 416px;
+  }
+
+  #footer-img-section img {
+    width: 67%;
+    margin: 19px 67px 0px 70px;
+  }
+  
+  #subscribe-section {
+    grid-area: d;
+    margin: 19px 67px 0px 70px;
+    text-align: center;
+  }
+
+  #site-map-section {
+    grid-area: e;
+    margin: 19px 67px 0px 70px;
+    text-align: center;
+  }
+
+  #address-section {
+    grid-area: f;
+    margin: 19px 67px 0px 70px;
+    text-align: center;
+  }
+
+  #contact-footer-section {
+    grid-area: g;
+    margin: 19px 67px 0px 70px;
+    text-align: center;
+  }
+
+  #social-media-footer-section {
+    grid-area: h;
+    margin: 19px 67px 0px 70px;
+    text-align: center;
+  }
+
 }

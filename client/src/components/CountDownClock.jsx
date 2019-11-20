@@ -23,7 +23,7 @@ export default class CountDownClock extends React.Component {
 
   getTimeUntil(deadline) {
     const time = Date.parse(deadline) - Date.parse(new Date());
-    console.log('time', time)
+    // console.log('time', time)
     const seconds = Math.floor((time/1000) % 60);
     let minutes = Math.floor((time / 1000 / 60) % 60);
     if (minutes.toString().length === 1) {
@@ -37,7 +37,7 @@ export default class CountDownClock extends React.Component {
     if (days.toString().length === 1) {
       days = `0${Math.floor(time / (1000 * 60 * 60 * 24))}`
     }
-    console.log('seconds', seconds, 'minutes', minutes, 'hours', hours, 'days', days) 
+    // console.log('seconds', seconds, 'minutes', minutes, 'hours', hours, 'days', days) 
     this.setState({ days, hours, minutes, seconds })
   }
 

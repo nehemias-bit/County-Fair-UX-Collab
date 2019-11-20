@@ -7,13 +7,13 @@ import FairCarousel from './FairCarousel';
 export default class Main extends Component {
   render() {
     return (
-      <>
+      <div id="flip">
        <div id="main-section">
         <nav id="main-section-nav">
-            <button>The Fair</button>
-            <Link to={`/gallery`}>
-            <button id="gallery-button">Gallery</button>
-            </Link> 
+          <button>The Fair</button>
+          <Link to={`/gallery`}>
+          <button id="gallery-button">Gallery</button>
+          </Link> 
           <button>Visit</button>
           <button>About</button>
           <input type="text" placeholder="SEARCH"></input>
@@ -24,7 +24,7 @@ export default class Main extends Component {
         <div id="bottom-nav">
           <div id="date-and-count">
             <nav id="date-nav">
-              <h2>August 27-29, 2016</h2>
+              <h2>November 22-24, 2019</h2>
             </nav>
             <CountDownClock deadline={this.props.deadline} />
           </div> 
@@ -32,7 +32,7 @@ export default class Main extends Component {
             <button>Buy Tickets</button>
           </div>
         </div>  
-      </>
+      </div>
     )
   }
 }

@@ -12,7 +12,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      deadline: "2019-12-25T20:00:00-04:00"
+      deadline: "2019-11-22T10:00:00-04:00"
     }
   }
 
@@ -22,11 +22,12 @@ class App extends React.Component {
       <div>
         <Header />
         <Main deadline={this.state.deadline} />
+        <Route exact path="/home" render={() => (<div></div>)} />
         <Route exact path='/gallery' render={() => (
           <Gallery />
         )} />
         <Footer />
-        
+
       </div >
 
     )

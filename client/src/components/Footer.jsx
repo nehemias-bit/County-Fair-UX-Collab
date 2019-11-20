@@ -6,16 +6,18 @@ export default function Footer(props) {
 
 
   return (
-    <div class="footer">
-      <div>
-        <h3>Subscribe to Our Newsletter</h3>
+    <div className="footer">
+      <div id="subscribe-section">
+        <h3 id="sec-one-h3">Subscribe to Our Newsletter</h3>
         <input
           type="text"
           placeholder="Enter your email here"
           id="email-footer"
+          id="sec-one-input"
         >
-
         </input>
+      </div>
+      <div id="address-section">
         <p>Address</p>
         <p>Rudgwick, Windacres Barn/Church Street,</p>
         <p>Nr Horsham, West Suxxex, RH12 3EG</p>
@@ -23,23 +25,25 @@ export default function Footer(props) {
       <div>
 
       </div>
-      <div id="link-footer">
+      <div id="site-map-section">
         <h3>Site Map</h3>
         <p>Media</p>
         <p>Camping</p>
         <p>Safety</p>
         <p>Sponsorship</p>
+       </div>
+        <div id="footer-img-section">
         <img
-          id="header-image"
+          id="footer-image"
           src="https://cdn-az.allevents.in/banners/417c6ea809a6ff945a1f153dc4f58528-rimg-w720-h338-gmir"
         />
       </div>
-      <div id="contact-footer">
+      <div id="contact-footer-section">
         <h3>Contact</h3>
         <p>contato@alphaainc.com</p>
         <p>+1 646 763 4523</p>
       </div>
-      <div id="social-media-footer">
+      <div id="social-media-footer-section">
         <div>
           <h3>Social</h3>
         </div>
