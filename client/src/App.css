@@ -349,9 +349,20 @@ margin-left: 10%;
   display: none;
 }
 
-#header-search {
+#subscribe-section1 {
+  display: none
+}
+
+
+
+#header-search1 {
   display: none;
 }
+
+#address-section1 {
+  display: none;
+}
+
 @media only screen and (max-width: 320px) {
 
   .header {
@@ -619,6 +630,21 @@ display: grid;
     width: 150%;
     margin-left: 5%;
   }
+
+  .left-footer-section {
+    display: none;
+  }
+
+  #address-section1 {
+    display: grid;
+    justify-content: center;
+  }
+
+  #subscribe-section1 {
+    justify-content: center;
+    display: grid;
+  }
+  
 
   
 
