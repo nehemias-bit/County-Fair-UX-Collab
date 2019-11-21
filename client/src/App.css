@@ -84,14 +84,29 @@
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   color: white;
+  width: 1200px;
+  margin: 10px;
+  margin-left: 7vw;
 }
 
 #email-footer {
   background-color: rgb(194, 214, 194);
   color: black;
 }
+.second-footer-section {
+margin-left: 10%;
+}
+
+#site-map-section {
+  margin-left: 25%;
+}
+
+#social-media-footer-section {
+  margin-left: 7vw;
+}
+
 
 #social-links img {
   height: 25px;
@@ -304,16 +319,16 @@
   justify-content: center;
 }
 #top-gallery-images img {
-  width: 20vw;
+  width: 26vw;
   height: 20vw;
-  margin: 1px;
+  margin: 10px;
 }
 
 #middle-gallery-images img {
-  width: 60vw;
+  width: 81vw;
   height: 30vw;
   margin: 10px;
-  margin-left: 19.5%
+  margin-left: 9%
 }
 #bottom-gallery-images {
   display: flex;
@@ -321,9 +336,9 @@
 }
 
 #bottom-gallery-images img {
-  width: 30vw;
+  width: 40vw;
   height: 20vw;
-  margin: 1px;
+  margin: 10px;
 }
 
 #burger-menu {
