@@ -23,8 +23,8 @@ class App extends React.Component {
       <div>
         <Header />
         <Main deadline={this.state.deadline} />
-        <Route exact path="/home" render={() => (<div></div>)} />
-        <EventsList />                                         
+        <Route exact path="/home" render={() => (<EventsList /> )} />
+                                                
         <Route exact path='/gallery' render={() => (
           <Gallery />
         )} />

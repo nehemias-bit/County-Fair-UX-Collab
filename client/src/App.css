@@ -78,17 +78,35 @@
   height: 20vh;
 }
 
+.footer-background {
+  background-color: #323232;
+}
+
 .footer {
   display: flex;
-  justify-content: space-between;
-  background-color: gray;
+  justify-content: space-evenly;
   color: white;
+  width: 1200px;
+  margin: 10px;
+  margin-left: 7vw;
 }
 
 #email-footer {
   background-color: rgb(194, 214, 194);
   color: black;
 }
+.second-footer-section {
+margin-left: 10%;
+}
+
+#site-map-section {
+  margin-left: 25%;
+}
+
+#social-media-footer-section {
+  margin-left: 7vw;
+}
+
 
 #social-links img {
   height: 25px;
@@ -301,16 +319,16 @@
   justify-content: center;
 }
 #top-gallery-images img {
-  width: 20vw;
+  width: 26vw;
   height: 20vw;
-  margin: 1px;
+  margin: 10px;
 }
 
 #middle-gallery-images img {
-  width: 60vw;
+  width: 81vw;
   height: 30vw;
   margin: 10px;
-  margin-left: 19.5%
+  margin-left: 9%
 }
 #bottom-gallery-images {
   display: flex;
@@ -318,9 +336,9 @@
 }
 
 #bottom-gallery-images img {
-  width: 30vw;
+  width: 40vw;
   height: 20vw;
-  margin: 1px;
+  margin: 10px;
 }
 
 #burger-menu {
@@ -331,10 +349,22 @@
   display: none;
 }
 
-#header-search {
+#subscribe-section1 {
+  display: none
+}
+
+
+
+#header-search1 {
   display: none;
 }
 
+#address-section1 {
+  display: none;
+}
+#footer-img-section2 {
+  display: none;
+}
 @media only screen and (max-width: 320px) {
 
   .header {
@@ -519,7 +549,7 @@
         "g"
         "h";
     height: 749px;
-    width: 130%;
+    width: 80%;
   }
 
   #sec-one-h3 {
@@ -527,9 +557,10 @@
   }
 
   
-  #footer-img-section {
-    grid-area: c;
+  #footer-img-section2 {
     width: 416px;
+    display: grid;
+
   }
 
   #footer-img-section img {
@@ -565,5 +596,69 @@
     grid-area: h;
     margin: 19px 67px 0px 70px;
     text-align: center;
+
   }
+
+/* .gallery-images {
+display: grid;
+}
+  #top-gallery-images {
+    display: grid;
+    justify-content: center;
+  }
+  #top-gallery-images img {
+    width: 480px;
+    height: 200px;
+  }
+#middle-gallery-images {
+  display: grid;
+  justify-content: center;
+  margin-right: 8%;
+}
+  #middle-gallery-images img {
+    width: 480px;
+    height: 200px;
+  }
+
+
+  #bottom-gallery-images {
+    display: grid;
+  }
+  #bottom-gallery-images img {
+    width: 480px;
+    height: 200px;
+  }
+
+  .footer-background {
+    width: 150%;
+    margin-left: 5%;
+  }
+
+  .left-footer-section {
+    display: none;
+  }
+
+  #address-section1 {
+    display: none;
+  }
+
+  
+
+  #subscribe-section1 {
+    justify-content: center;
+    display: grid;
+  }
+  
+
+  #footer-img-section2 {
+    display: grid;
+    justify-content: center;
+  }
+
+  #footer-img-section {
+    display: none;
+  } */
+
+
+  
 }
