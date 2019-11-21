@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
 import Gallery from './components/Gallery'
+import EventsList from './components/EventsList';
 import { Route, Link, withRouter } from 'react-router-dom';
 
 
@@ -23,6 +24,7 @@ class App extends React.Component {
         <Header />
         <Main deadline={this.state.deadline} />
         <Route exact path="/home" render={() => (<div></div>)} />
+        <EventsList />                                         
         <Route exact path='/gallery' render={() => (
           <Gallery />
         )} />
