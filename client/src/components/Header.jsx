@@ -13,7 +13,7 @@ export default function Header(props) {
         /></Link>
       </div>
       <div id="right-side-header">
-        <p>Right Side Header</p>
+        <p>The best county fair in town!</p>
       </div>
       <div id="burger-menu">
         <div className="burger"></div>
@@ -21,10 +21,10 @@ export default function Header(props) {
         <div className="burger"></div>
         <p>Menu</p>
       </div>  
-      <div id="header-search">
+      {/* <div id="header-search">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/490px-Magnifying_glass_icon.svg.png" />
         <input type="text" placeholder="Search"></input>
-      </div>
+      </div> */}
     </div>
   )
 }
