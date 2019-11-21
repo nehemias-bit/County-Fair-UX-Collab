@@ -18,8 +18,8 @@ export default class Main extends Component {
           <button>About</button>
           <input type="text" placeholder="SEARCH"></input>
           <button id="magnify-glass"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/490px-Magnifying_glass_icon.svg.png" alt="magnifyglass logo"/></button>
-        </nav>
-        <FairCarousel />
+          </nav>
+          <FairCarousel />
         </div>
         <div id="bottom-nav">
           <div id="date-and-count">

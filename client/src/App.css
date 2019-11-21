@@ -1,7 +1,8 @@
 .events-parent {
-  width: 100%;
+  width: 1200px;
   height: 100%;
 }
+
 .top-row-pictures {
   position: relative;
   display: flex;
@@ -12,26 +13,81 @@
   height: 100%;
   width: calc(100% / 3);
   z-index: -1;
-  opacity: 0.5;
+  opacity: 0.8;
   border: solid 1px #979797;
-  background-color: rgba(0, 0, 0, 0.85);
+  filter: brightness(50%);
 }
+
 .top-photo:hover {
   opacity: 0.8;
   height: 50%;
 }
+
 .top-row-h1 {
   display: flex;
   justify-content: space-around;
   margin-top: -25%;
-  margin-left: -4%;
+  width: 1409px;
   color: black;
 }
+
+#one {
+  margin-right: 100px;
+}
+
+#two {
+  margin-right: 115px;
+}
+
+#three {
+  margin-right: 59px;
+}
+
+#one {
+  color: white;
+}
+
+#two {
+  color: white;
+}
+
+#three {
+  color: white;
+}
+
+#four {
+  margin-right: 49px;
+}
+
+#four h3{
+  color: white;
+}
+
+#five h3{
+  color: white;
+}
+
+#six {
+  margin-right: 16px;
+}
+
+#six h3{
+  color: white;
+  }
+
 .top-row-h3 {
-  display: flex;
-  justify-content: space-around;
-  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1414px;
+  justify-items: center;
 }
+
+#middle-part {
+  text-align: center;
+  width: 1200px;
+  margin: 0 120px 0 120px;
+}
+
 #title {
   display: flex;
   justify-content: center;
@@ -40,16 +96,28 @@
 }
 #paragraph {
   margin: 10px 40px 0 40px;
+  font-size: 24px;
+  line-height: 1.5;
+  font-family: Avenir;
 }
 #title-two {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 45px;
+  font-family: Avenir;
 }
+
+#title-two h1{
+margin: 0px;
+}
+
 .button-row {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 100px;
 }
 
 .green-button {
@@ -59,7 +127,8 @@
   border: solid 1px #979797;
   background-color: #5a7336;
   color: whitesmoke;
-  font-size: 40px;
+  font-family: Avenir;
+  font-size: 32px;
 }
 
 .header {
@@ -137,11 +206,6 @@ margin-left: 10%;
   font-family: Avenir;
   font-size: 36px;
   font-weight: 600;
-  /* font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: center; */
 }
 
 #gallery-button {
@@ -170,6 +234,7 @@ margin-left: 10%;
 
 ::placeholder {
   color: white;
+  font-weight: 600;
 }
 
 #main-section-nav input:focus {
@@ -180,11 +245,24 @@ margin-left: 10%;
   height: 430px; 
 }
 
+.car-img-div {
+  z-index: -1;
+}
+
 .carousel-row img {
  width: 1419px;
  height: 54.5vh;
  background-repeat: no-repeat;
  background-size: cover;
+}
+
+#the-show{
+  
+}
+
+#the-show h1{
+  z-index: 99;
+  margin: 0px;
 }
 
 .carousel-dots {
@@ -196,6 +274,7 @@ margin-left: 10%;
 .carousel-dots li {
   background-color: white;
   border-radius: 20px;
+  /* filter: brightness(150%); */
 }
 
 .carousel-dots li.carousel-dots-active button:before {
@@ -359,12 +438,6 @@ margin-left: 10%;
   display: none;
 }
 
-#address-section1 {
-  display: none;
-}
-#footer-img-section2 {
-  display: none;
-}
 @media only screen and (max-width: 320px) {
 
   .header {
@@ -522,8 +595,13 @@ margin-left: 10%;
     "b";
   }
 
+  .carousel-row img{
+    width: 103% !important;
+  }
+
   #main-section {
     grid-area: b;
+    height: 423px;
   }
 
   #bottom-nav {
@@ -537,6 +615,47 @@ margin-left: 10%;
   .carousel-row img {
     width: 100%;
     height: 74.5vh;
+  }
+
+  .events-parent {
+    width: 320px;
+  }
+
+  .top-row-pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 320px;
+    height: 400px;
+  }
+
+  .top-row-pictures img {
+    width: 130%;
+    height: 316px;
+  }
+
+  .top-row-h3 {
+    width: 320px;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .top-row-h1 {
+    width: 320px;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #middle-part {
+    width: 320px;
+    margin-left: 45px;
+  }
+
+  .button-row {
+    display: grid;
+    grid-template-columns: 1fr;
+  
   }
 
   .footer {

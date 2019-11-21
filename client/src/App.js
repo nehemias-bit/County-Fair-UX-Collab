@@ -20,18 +20,15 @@ class App extends React.Component {
   render() {
     // make sure to return some UI
     return (
-      <div>
+      <div className="app">
         <Header />
-        <Main deadline={this.state.deadline} />
+        <Main deadline={this.state.deadline} />               
         <Route exact path="/home" render={() => (<EventsList /> )} />
-                                                
         <Route exact path='/gallery' render={() => (
           <Gallery />
         )} />
         <Footer />
-
       </div >
-
     )
   }
 }
