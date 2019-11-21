@@ -362,7 +362,9 @@ margin-left: 10%;
 #address-section1 {
   display: none;
 }
-
+#footer-img-section2 {
+  display: none;
+}
 @media only screen and (max-width: 320px) {
 
   .header {
@@ -555,9 +557,10 @@ margin-left: 10%;
   }
 
   
-  #footer-img-section {
-    grid-area: c;
+  #footer-img-section2 {
     width: 416px;
+    display: grid;
+
   }
 
   #footer-img-section img {
@@ -636,9 +639,10 @@ display: grid;
   }
 
   #address-section1 {
-    display: grid;
-    justify-content: center;
+    display: none;
   }
+
+  
 
   #subscribe-section1 {
     justify-content: center;
@@ -646,7 +650,14 @@ display: grid;
   }
   
 
-  
+  #footer-img-section2 {
+    display: grid;
+    justify-content: center;
+  }
+
+  #footer-img-section {
+    display: none;
+  }
 
 
   

@@ -10,28 +10,33 @@ export default function Footer(props) {
 
 
       <div className="footer">
-        
 
 
-          <div id="subscribe-section1">
-            <h3 id="sec-one-h3">Subscribe to Our Newsletter</h3>
-            <img src="https://files.slack.com/files-pri/T0351JZQ0-FQVS6G6TH/newsletter_subscribe__mobile_.png"/>
-    
+      <div id="footer-img-section2">
+            <img
+              id="footer-image"
+              src="https://cdn-az.allevents.in/banners/417c6ea809a6ff945a1f153dc4f58528-rimg-w720-h338-gmir"
+            />
           </div>
-          <div id="address-section1">
-            <p>Address</p>
-            <p>Rudgwick, Windacres Barn/Church Street,</p>
-            <p>Nr Horsham, West Suxxex, RH12 3EG</p>
-          </div>
+        <div id="subscribe-section1">
+          <h3 id="sec-one-h3">Subscribe to Our Newsletter</h3>
+          <img src="https://files.slack.com/files-pri/T0351JZQ0-FQVS6G6TH/newsletter_subscribe__mobile_.png" />
 
-        
+        </div>
+        <div id="address-section1">
+          <p>Address</p>
+          <p>Rudgwick, Windacres Barn/Church Street,</p>
+          <p>Nr Horsham, West Suxxex, RH12 3EG</p>
+        </div>
+
+
         <div className="left-footer-section">
 
 
           <div id="subscribe-section">
             <h3 id="sec-one-h3">Subscribe to Our Newsletter</h3>
-            <img src="https://files.slack.com/files-pri/T0351JZQ0-FQVS6G6TH/newsletter_subscribe__mobile_.png"/>
-    
+            <img src="https://files.slack.com/files-pri/T0351JZQ0-FQVS6G6TH/newsletter_subscribe__mobile_.png" />
+
           </div>
           <div id="address-section">
             <p>Address</p>
