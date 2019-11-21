@@ -13,7 +13,7 @@ export default function Header(props) {
         /></Link>
       </div>
       <div id="right-side-header">
-        <p>Right Side Header</p>
+        <p>The best county fair in town!</p>
       </div>
       <div id="burger-menu">
         <div className="burger"></div>
