@@ -8,8 +8,8 @@ class EventsList extends React.Component {
 
   render() {
     return (
-      <div className="events-parent">
-        <div className="top-row-pictures">
+      <>
+      <div className="top-row-pictures">
           <img
             src="https://www.discoverlancaster.com/uploads/members/pennsylvania_renaissance_faire/main/prf%20partnerpage%20450%20x%20235.jpg"
             className="top-photo"
@@ -23,19 +23,20 @@ class EventsList extends React.Component {
             className="top-photo"
           />
         </div >
+        <div className="events-parent">
       
         <div className="top-row-h1">
-            <h1>2020 Updates</h1>
-            <h1>Directions</h1>
-            <h1>Calender</h1>
+            <h1 id="one">2020 Updates</h1>
+            <h1 id="two">Directions</h1>
+            <h1 id="three">Calender</h1>
         </div>
         
         <div className="top-row-h3">
-            <h3>Checkout what's going on this year</h3>
-            <h3>Find the quickest route</h3>
-            <h3>View the schedule for this years show</h3>
+            <div id="four"><h3 >Checkout what's going on this year</h3></div>
+            <div id="five"><h3 >Find the quickest route</h3></div>
+            <div id="six"><h3>View the schedule for this years show</h3></div>
         </div>
-
+        <div id="middle-part">
         <div id="title">
           <h1>Rudgwick Steam and Country Show</h1>
         </div>
@@ -56,13 +57,10 @@ class EventsList extends React.Component {
           <button className="green-button">Guest Book</button>
           <button className="green-button">Reserve a Camping Space</button>
           <button className="green-button">Exhibitor Trade Forms</button>
+        </div>      
         </div>
-
-
-          
-
-      
-      </div>
+        </div>  
+        </>
     );
   }
 }
