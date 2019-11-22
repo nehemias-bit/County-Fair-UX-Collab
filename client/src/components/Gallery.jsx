@@ -21,7 +21,7 @@ export default class Gallery extends React.Component {
         </div>
 
         <div id="middle-gallery-images">
-          <img src="http://www.rudgwicksteamshow.co.uk/communities/9/004/006/141/899/images/4582493377.jpg" />
+          <img src="https://i.imgur.com/yu3eQCw.png" />
         </div>
         <div id="bottom-gallery-images">
           <img src="http://www.rudgwicksteamshow.co.uk/communities/9/004/006/141/899/images/4582495325.jpg" />

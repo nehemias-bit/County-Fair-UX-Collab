@@ -24,39 +24,53 @@
 }
 
 .top-row-h1 {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
   margin-top: -25%;
-  width: 1409px;
+  width: 479px;
   color: black;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.top-row-h2 {
+  display: grid;
+  width: 479px;
+  color: black;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-left: 479px;
+  margin-top: -235px;
+}
+
+.top-row-h3 {
+  display: grid;
+  width: 479px;
+  color: black;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-left: 960px;
+  margin-top: -235px;
 }
 
 #one {
-  margin-right: 100px;
-}
-
-#two {
-  margin-right: 115px;
-}
-
-#three {
-  margin-right: 59px;
-}
-
-#one {
+  margin-bottom: -9px;
   color: white;
 }
 
 #two {
+  margin-right: 5px;
+  margin-bottom: -9px;
   color: white;
 }
 
 #three {
+  margin-right: 12px;
+  margin-bottom: -9px;
   color: white;
 }
 
 #four {
-  margin-right: 49px;
+  margin-right: 0px;
 }
 
 #four h3{
@@ -68,18 +82,11 @@
 }
 
 #six {
-  margin-right: 16px;
+  margin-right: 2px;
 }
 
 #six h3{
   color: white;
-  }
-
-.top-row-h3 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1414px;
-  justify-items: center;
 }
 
 #middle-part {
@@ -92,7 +99,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  margin-top: 215px;
+  margin-top: 129px;
 }
 #paragraph {
   margin: 10px 40px 0 40px;
@@ -255,6 +262,7 @@ margin-left: 10%;
 
 #main-section-nav img {
   width: 40px;
+  margin-top: 13px;
 }
 
 #main-section-nav input {
@@ -263,6 +271,7 @@ margin-left: 10%;
   font-size: 30px;
   padding-left: 10px;
   margin-top: 1px;
+  margin-bottom: 1px;
   color: white;
 }
 
@@ -493,6 +502,10 @@ margin-left: 10%;
   display: none;
 }
 
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 320px) {
 
   .header {
@@ -515,6 +528,7 @@ margin-left: 10%;
 
   #header-search img {
     width: 20%;
+    margin-right: 14px;
   }
 
   #header-search input {
@@ -580,6 +594,14 @@ margin-left: 10%;
 
   #date-and-count {
     height: 50px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
   }
 
   #date-nav {
@@ -678,7 +700,6 @@ margin-left: 10%;
 
   .top-row-pictures {
     display: grid;
-    /* grid-template-columns: 1fr; */
     width: 320px;
     height: 400px;
     grid-template-areas: 
@@ -691,47 +712,66 @@ margin-left: 10%;
     width: 100%;
     height: 316px;
     margin-left: 43px;
+    margin-bottom: 3px;
+    margin-top: 3px;
   }
 
   #title {
-    margin-top: 700px;
-  }
-
-  #one {
-    display: none;
+    margin-top: 174px;
   }
   
   #two {
-    display: none;
+    display: inline-block;
   }
 
   #three {
-    display: none;
+    display: inline-block;
   }
 
   #four {
-    display: none;
+    display: inline-block;
   }
 
   #five {
-    display: none;
+    display: inline-block;
   }
 
   #six {
+    display: inline-block;
+  }
+
+  .top-row-h3 img {
     display: none;
   }
 
-  /* .top-row-h3 {
-    width: 320px;
-    font-size: 15px;
-    display: block;
+  .top-row-h2 img {
+    display: none;
   }
 
-  .top-row-h1 {
+  .top-row-h1 img {
+    display: none;
+  }
+
+  .top-row-h1  {
+    display: grid;
     width: 320px;
-    font-size: 15px;
-    display: block;
-  } */
+    margin-top: -339px;
+    margin-left: 40px;
+  }
+
+  .top-row-h2  {
+    display: grid;
+    width: 320px;
+    margin-top: 188px;
+    margin-left: 40px;
+  }
+
+  .top-row-h3  {
+    display: grid;
+    width: 320px;
+    margin-top: 220px;
+    margin-left: 71px;
+  }
 
   #middle-part {
     width: 320px;
@@ -809,37 +849,37 @@ margin-left: 10%;
 
   #footer-img-section img {
     width: 67%;
-    margin: 19px 67px 0px 70px;
+    margin: 19px 67px 0px 36px;
     grid-area: c;
   }
   
   #subscribe-section {
     grid-area: d;
-    margin: 19px 67px 0px 70px;
+    margin: 24px 28px 0px 49px;
     text-align: center;
   }
 
   #site-map-section {
     grid-area: e;
-    margin: 19px 67px 0px 70px;
+    margin: 4px 67px 0px 45px;
     text-align: center;
   }
 
   #address-section {
     grid-area: f;
-    margin: 19px 67px 0px 70px;
+    margin: 19px 67px 0px 83px;
     text-align: center;
   }
 
   #contact-footer-section {
     grid-area: g;
-    margin: 19px 67px 0px 70px;
+    margin: 19px 67px 0px 72px;
     text-align: center;
   }
 
   #social-media-footer-section {
     grid-area: h;
-    margin: 19px 67px 0px 70px;
+    margin: 19px 67px 0px 63px;
     text-align: center;
   }
 }
