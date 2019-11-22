@@ -31,6 +31,7 @@ class EventsList extends React.Component {
             <h1 id="three">Calender</h1>
         </div>
         
+        
         <div className="top-row-h3">
             <div id="four"><h3 >Checkout what's going on this year</h3></div>
             <div id="five"><h3 >Find the quickest route</h3></div>
@@ -54,9 +55,9 @@ class EventsList extends React.Component {
         </div>
 
         <div className="button-row">
-          <button className="green-button">Guest Book</button>
-          <button className="green-button">Reserve a Camping Space</button>
-          <button className="green-button">Exhibitor Trade Forms</button>
+          <button className="green-button" id="green-one">Guest Book<img id="green-seven" src="https://i.imgur.com/RxThYwH.png"/></button>
+          <button className="green-button">Reserve a Camping Space<img id="green-two" src="https://i.imgur.com/8dfbELV.png"/></button>
+          <button className="green-button" id="green-three"><span id="green-five">Exhibitor Trade <span id="green-six">Forms</span><img id="green-four" src="https://i.imgur.com/vVsOS16.png"/></span></button>
         </div>      
         </div>
         </div>  
