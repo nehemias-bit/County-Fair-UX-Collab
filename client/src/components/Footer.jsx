@@ -20,7 +20,7 @@ export default function Footer(props) {
 
           <div id="subscribe-section">
             <h3 id="sec-one-h3">Subscribe to Our Newsletter</h3>
-            <img src="https://files.slack.com/files-pri/T0351JZQ0-FQVS6G6TH/newsletter_subscribe__mobile_.png" />
+            <img src="https://i.imgur.com/KESPh2L.png" />
 
           </div>
           <div id="address-section">
@@ -63,18 +63,18 @@ export default function Footer(props) {
           <div id="social-links">
             <img
               id="facebook-icon"
-              src="https://files.slack.com/files-pri/T0351JZQ0-FQVR8LCS3/facebook_icon__mobile_.png" />
+              src="https://i.imgur.com/eaTPwgP.png" />
             <img
               id="pinterest-icon"
-              src="https://files.slack.com/files-pri/T0351JZQ0-FQGFMJP5H/pinterest_icon__mobile_.png"
+              src="https://i.imgur.com/fm9CbM1.png"
             />
             <img
               id="twitter-icon"
-              src="https://files.slack.com/files-pri/T0351JZQ0-FQW6313KQ/twitter_icon__mobile_.png"
+              src="https://i.imgur.com/QrYIyxh.png"
             />
             <img
               id="instagram-icon"
-              src="https://files.slack.com/files-pri/T0351JZQ0-FQTFXMJP6/insta_icon__mobile_.png"
+              src="https://i.imgur.com/ZIZ2AB5.png"
             />
           </div>
         </div>
