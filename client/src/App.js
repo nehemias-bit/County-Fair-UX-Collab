@@ -13,7 +13,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      deadline: "2019-11-22T10:00:00-04:00"
+      deadline: "2019-11-22T13:00:00-04:00"
     }
   }
 

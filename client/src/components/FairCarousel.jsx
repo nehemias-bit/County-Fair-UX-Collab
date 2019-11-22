@@ -22,23 +22,28 @@ export default class FairCarousel extends Component {
       <div>
         <Slider {...settings}>
           <div className="car-img-div">
-            <Link to="/gallery"><img src="https://i.imgur.com/Wwdllgo.png" /></Link>
+            <Link to="/gallery"><img className="desktop" src="https://i.imgur.com/Wwdllgo.png" /></Link>
+            <Link to="/gallery"><img className="mobile" src="https://i.imgur.com/u8Wjwzn.png" /></Link>
             <div id="the-show"><h1>The Show</h1></div>
           </div>
           <div className="car-img-div">
-            <Link to="/gallery"><img src="http://www.rudgwicksteamshow.co.uk/communities/9/004/006/141/899/images/4582509942.jpg" /></Link>
+            <Link to="/gallery"><img className="desktop" src="https://i.imgur.com/1EYr53F.png" /></Link>
+            <Link to="/gallery"><img className="mobile" src="https://i.imgur.com/dJcSfjJ.png" /></Link>
             <div id="the-show"><h1>The Show</h1></div>
           </div>
           <div className="car-img-div">
-            <Link to="/gallery"><img src="http://www.rudgwicksteamshow.co.uk/communities/9/004/006/141/899/images/4582509942.jpg" /></Link>
+            <Link to="/gallery"><img className="desktop" src="https://i.imgur.com/S89miFm.png" /></Link>
+            <Link to="/gallery"><img className="mobile" src="https://i.imgur.com/3UkFm0x.png" /></Link>
             <div id="the-show"><h1>The Show</h1></div>
           </div>
           <div className="car-img-div">
-            <Link to="/gallery"><img src="http://www.rudgwicksteamshow.co.uk/communities/9/004/006/141/899/images/4582509942.jpg" /></Link>
+            <Link to="/gallery"><img className="desktop" src="https://i.imgur.com/rbPQ60x.png" /></Link>
+            <Link to="/gallery"><img className="mobile" src="https://i.imgur.com/zBIcOsz.png" /></Link>
             <div id="the-show"><h1>The Show</h1></div>
           </div>
           <div className="car-img-div">
-            <Link to="/gallery"><img src="http://www.rudgwicksteamshow.co.uk/communities/9/004/006/141/899/images/4582509942.jpg" /></Link>
+            <Link to="/gallery"><img className="desktop" src="https://i.imgur.com/yu3eQCw.png" /></Link>
+            <Link to="/gallery"><img className="mobile" src="https://i.imgur.com/OY8WqpX.png" /></Link>
             <div id="the-show"><h1>The Show</h1></div>
           </div>
         </Slider>

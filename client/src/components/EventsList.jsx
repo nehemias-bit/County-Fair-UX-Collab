@@ -27,16 +27,23 @@ class EventsList extends React.Component {
       
         <div className="top-row-h1">
             <h1 id="one">2020 Updates</h1>
+            <div id="four"><h3 >Checkout what's going on this year</h3></div>
+            <img src="https://i.imgur.com/K8IFqEN.png"/>
+          </div>
+          
+        <div className="top-row-h2">
             <h1 id="two">Directions</h1>
-            <h1 id="three">Calender</h1>
+            <div id="five"><h3 >Find the quickest route</h3></div>
+            <img src="https://i.imgur.com/YBlhr3p.png"/>
         </div>
         
         
         <div className="top-row-h3">
-            <div id="four"><h3 >Checkout what's going on this year</h3></div>
-            <div id="five"><h3 >Find the quickest route</h3></div>
+            <h1 id="three">Calender</h1>
             <div id="six"><h3>View the schedule for this years show</h3></div>
+            <img src="https://i.imgur.com/ZV4AKqe.png"/>
         </div>
+          
         <div id="middle-part">
         <div id="title">
           <h1>Rudgwick Steam and Country Show</h1>
